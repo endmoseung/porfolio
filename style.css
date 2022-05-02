@@ -6,7 +6,7 @@
     --color-light-white: #eeeeee;
     --color-dark-white: #bdbdbd;
     --color-pink: #fe918d;
-    --color-dark-pink: #ff6863;
+    --color-nav: RGB(246, 183, 145);
     --color-dark-grey: #4d4d4d;
     --color-grey: #616161;
     --color-light-grey: #7c7979;
@@ -37,6 +37,12 @@
 }
 
 /* typography */
+button{
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
 h1{
     font-size: var(--font-large);
     font-weight: var(--weight-bold);
@@ -71,7 +77,7 @@ p{
 }
 /* nav bar */
 nav{
-    background:url(img/background/background.png)
+    background-color: var(--color-nav);
 }
 .headbox{
     display: flex;
@@ -101,4 +107,27 @@ nav{
 }
 .headbox__content--button.active{
     border: var(--color-white) solid 1px;
+}
+
+/* home */
+
+#home{
+    background: url(img/background/background.png) center/cover no-repeat;
+    padding: 40px;
+    text-align: center;;
+}
+.home__img{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    border: 2px solid var(--color-white);
+}
+.contactme{
+    border: 2px solid var(--color-white);
+    border-radius: var(--size-border-radius);
+    color: var(--color-white);
+    font-size: var(--font-regular);
+    font-weight: var(--weight-semi-bold);
+    padding: 8px 12px;
+    
 }
