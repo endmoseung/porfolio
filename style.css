@@ -6,6 +6,7 @@
     --color-light-white: #eeeeee;
     --color-dark-white: #bdbdbd;
     --color-pink: #fe918d;
+    --color-dark-pink:RGB(253, 134, 130);
     --color-nav: RGB(246, 183, 145);
     --color-dark-grey: #4d4d4d;
     --color-grey: #616161;
@@ -355,4 +356,39 @@ nav{
   left: 50%;
   margin-left: -12px;
   margin-top: 8px;
+}
+
+/* Testimonials */
+
+#testimonial{
+  background-color: var(--color-light-white);
+}
+.colleaguebox{
+  margin: 40px;
+}
+.colleague{
+  display: flex;
+  margin: 30px 0;
+}
+.colleague img{
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+.colleague img:nth-child(odd){
+  margin-right: 40px;
+}
+
+.colleague img:nth-child(even){
+  margin-left: 40px;
+}
+.colleague__txt{
+  background-color: var(--color-white);
+  padding: 20px 40px
+}
+.colleague p{
+  color: var(--color-light-grey);
+}
+.txt__whois a{
+  color: var(--color-dark-pink);
 }
