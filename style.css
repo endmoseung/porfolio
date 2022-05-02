@@ -80,6 +80,19 @@ p{
     color: var(--color-black);
     margin: 4px 0;
 }
+
+/* section common */
+.section{
+    padding: 50px;
+    text-align: center;
+    margin: auto;
+}
+
+.section__container{
+    max-width: 1200px;
+    margin: auto;
+}
+
 /* nav bar */
 nav{
     background-color: var(--color-nav);
@@ -135,14 +148,6 @@ nav{
     font-weight: var(--weight-semi-bold);
     padding: 8px 12px;
     
-}
-
-/* section common */
-.section{
-    padding: 50px;
-    text-align: center;
-    max-width: 1200px;
-    margin: auto;
 }
 
 /* About */
@@ -208,4 +213,60 @@ nav{
 }
 .currentjob__howlong{
     font-size: var(--font-micro);
+}
+
+/* Skills */
+
+#skills{
+  background-color: var(--color-yellow);
+}
+.skillset{
+  display: flex;
+  color: var(--color-white);
+  margin: 20px 0;
+}
+.skillset__leftbox{
+  flex-basis: 60%;
+  background-color: var(--color-dark-grey);
+}
+.skillset__rightbox{
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  }
+.tools{
+  background-color: var(--color-grey);
+  flex-basis: 60%;
+}
+.etc{
+  background-color: var(--color-light-grey);
+  flex-basis: 40%;
+}
+.skillset__title{
+  color: var(--color-white);
+}
+.skillset__leftbox{
+  padding: 10px 40px;
+}
+.progress__txt{
+  display: flex;
+  justify-content: space-between;
+}
+.progress__bar{
+  background-color: var(--color-grey);
+  height: 3px;
+}
+.skillbox__progress{
+  margin-bottom: 32px;
+}
+.bar__value{
+  background-color: var(--color-yellow);
+  height: 100%
+}
+.tools__detail ,.etc__detail{
+  display: flex;
+  flex-direction: column;
+}
+.tools, .etc{
+  padding: 20px;
 }
