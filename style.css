@@ -392,3 +392,32 @@ nav{
 .txt__whois a{
   color: var(--color-dark-pink);
 }
+
+/* Contactx */
+
+#contact{
+  background-color: var(--color-pink);
+}
+.contact__email, 
+.contact__talk,
+.contact__right{
+  color: var(--color-white);
+}
+.contact__talk{
+  margin: 32px 0;
+}
+.contact__link{
+  font-size: var(--font-medium);
+  margin: 24px 0;
+}
+.contact__link i{
+  
+}
+.contact__link a{
+  color: white;
+}
+.contact__link i:hover{
+  transform: scale(1.2);
+  color: black;
+  transition: all var(--animation-duration) ease-in;
+}
