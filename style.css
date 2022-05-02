@@ -410,9 +410,6 @@ nav{
   font-size: var(--font-medium);
   margin: 24px 0;
 }
-.contact__link i{
-  
-}
 .contact__link a{
   color: white;
 }
