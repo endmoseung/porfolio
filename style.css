@@ -96,12 +96,22 @@ p{
 
 /* navbar */
 #navbar{
-    background-color: var(--color-nav);
+    background-color: transparent;
     position: relative;
     display: flex;
     justify-content: space-between;
     color: var(--color-white);
     align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    padding: 17px 0;
+    transition: all var(--animation-duration) ease-in-out;
+}
+#navbar.navbar--dark{
+  background-color: var(--color-nav);
+  padding: 8px;
 }
 .headbox__myname{
     padding: 16px;
@@ -142,6 +152,7 @@ p{
     background: url(img/background/background.png) center/cover no-repeat;
     padding: 40px;
     text-align: center;;
+    padding-top: 120px;
 }
 .home__img{
     border-radius: 50%;
