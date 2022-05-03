@@ -94,38 +94,46 @@ p{
     margin: auto;
 }
 
-/* nav bar */
-nav{
+/* navbar */
+#navbar{
     background-color: var(--color-nav);
-}
-.headbox{
+    position: relative;
     display: flex;
     justify-content: space-between;
     color: var(--color-white);
     align-items: center;
 }
-.headbox .headbox__myname{
+.headbox__myname{
     padding: 16px;
     font-size: var(--font-medium);
     font-weight: var(--weight-semi-bold);
 }
-.headbox .headbox__myname a{
+.headbox__myname a{
     color: white;
 }
-.headbox .headbox__content{
+.headbox__content{
     display: flex;
 }
-.headbox .headbox__content .headbox__content--button{
+.headbox__content .headbox__content--button{
     padding: 8px 12px;
     margin: 0 4px;
     cursor: pointer;
     border-radius: var(--size-border-radius);
 }
-.headbox .headbox__content .headbox__content--button:hover{
+.headbox__content .headbox__content--button:hover{
     background-color: var(--color-dark-pink);
 }
 .headbox__content--button.active{
     border: var(--color-white) solid 1px;
+}
+.navbar__toggle-btn{
+  position: absolute;
+  border: none;
+  color: var(--color-white);
+  font-size: var(--font-medium);
+  right: 32px;
+  top: 24px;
+  display: none;
 }
 
 /* home */
@@ -326,8 +334,8 @@ nav{
   opacity: 0.8;
 }
 .mywork__projectimgs a img{
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 .imgs__description{
   position: absolute;
@@ -417,4 +425,41 @@ nav{
   transform: scale(1.2);
   color: black;
   transition: all var(--animation-duration) ease-in;
+}
+
+/* For below 768px screen width */
+@media screen and (max-width:768px){
+  .navbar__toggle-btn{
+    display: block;
+  }
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .headbox__content{
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .headbox__content.active{
+    display: flex;
+  }
+  .aboutmajor{
+    flex-direction: column;
+    align-items: center;
+  }
+  .position{
+    margin-bottom: 38px;
+  }
+  .skillset{
+    flex-direction: column;
+  }
+  .mywork__projectimgs a{
+    flex-grow: 1;
+  }
+  .colleague img{
+    width: 80px;
+    height: 80px;
+  }
 }
