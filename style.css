@@ -48,7 +48,6 @@ button{
     outline: none;
     cursor: pointer;
 }
-
 h1{
     font-size: var(--font-large);
     font-weight: var(--weight-bold);
@@ -153,6 +152,9 @@ p{
     padding: 40px;
     text-align: center;;
     padding-top: 120px;
+}
+.homemom h1,h2{
+  color: white;
 }
 .home__img{
     border-radius: 50%;
