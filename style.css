@@ -378,16 +378,16 @@ p{
   transform: translateY(10px);
 }
 .imgs__description h3{
-  color: var(--color-white);
+  color: var(--color-orange);
 }
 .imgs__description h3:after{
   content: '';
-  width: 25px;
+  width: 50px;
   height: 2px;
   background-color: var(--color-white);
   display: block;
   position: relative;
-  left: 50%;
+  left: 46%;
   margin-left: -12px;
   margin-top: 8px;
 }
@@ -480,12 +480,14 @@ p{
   #navbar {
     flex-direction: column;
     align-items: flex-start;
+    background-color: var(--color-nav);
   }
   .headbox__content{
     flex-direction: column;
     text-align: center;
     width: 100%;
     display: none;
+    
   }
   .headbox__content.active{
     display: flex;

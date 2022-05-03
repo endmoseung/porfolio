@@ -72,6 +72,7 @@ headboxContent.addEventListener("click",(event)=>{
   if(link == undefined){
     return;
   }
+  headboxContent.classList.remove("active");
   scrollIntoView(link);
 })
 
