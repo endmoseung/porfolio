@@ -73,7 +73,6 @@ headboxContent.addEventListener("click",(event)=>{
     return;
   }
   scrollIntoView(link);
-  target.classList.add("active");
 })
 
 contactMeButton.addEventListener("click",()=>{
@@ -126,6 +125,11 @@ projectPosition.addEventListener("click",(event)=>{
   if (filter == null){
     return ;
   }
+//remove active from the previous item, and select the new one
+  const active = document.querySelector(".project__position button.active");
+  active.classList.remove("active");
+  const target = event.target.nodeName === 'BUTTON' ? event.target : event.target.parentNode;
+  target.classList.add("active");
   myWorkProjectImgBox.classList.add("anim-out");
 
 setTimeout(()=>{
