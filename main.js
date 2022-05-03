@@ -74,7 +74,6 @@ headboxContent.addEventListener("click",(event)=>{
   }
   scrollIntoView(link);
   target.classList.add("active");
-  c
 })
 
 contactMeButton.addEventListener("click",()=>{
@@ -94,4 +93,51 @@ const homeHeight = homeMom.getBoundingClientRect().height;
 
 document.addEventListener("scroll",()=>{
   homeMom.style.opacity = 1 - window.scrollY / homeHeight;
+});
+
+// up button
+
+const arrowBtn = document.querySelector(".arrow--btn");
+document.addEventListener("scroll",()=>{
+  function byeButton(){
+    arrowBtn.classList.remove("active");
+  }
+  if(window.scrollY > homeHeight){
+    arrowBtn.classList.add("active");
+    setTimeout(byeButton,5000)//시간이 일정시간 지났을때 함수호출 여기서는 5000ms 즉 5초뒤에 arrowbtn이 사라지도록 함
+  }else{
+    arrowBtn.classList.remove("active");
+  }
+})
+
+// if click up button go to top
+arrowBtn.addEventListener("click",()=>{
+  scrollIntoView('#home');
+})
+
+// filtering project
+
+const myWorkProjectImgs = document.querySelectorAll(".mywork__projectimgs a");
+const myWorkProjectImgBox = document.querySelector(".mywork__projectimgs");
+const projectPosition = document.querySelector(".project__position");
+
+projectPosition.addEventListener("click",(event)=>{
+  const filter = event.target.dataset.filter || event.target.parentNode.dataset.filter;  //or 오른쪽에 경우는 버튼안에 숫자에 관한 경운데 이 숫자의 부모요소의 Dataset은 or 왼쪽의 data와 같다
+  if (filter == null){
+    return ;
+  }
+  myWorkProjectImgBox.classList.add("anim-out");
+
+setTimeout(()=>{
+  myWorkProjectImgBox.classList.remove("anim-out");
+  myWorkProjectImgs.forEach((project)=>{
+    console.log(project.dataset.type);
+    if(filter === '*' || filter === project.dataset.type){
+      project.classList.remove("invisible");
+    }else{
+      project.classList.add("invisible");
+    }
+  })
+},300);
+
 });

@@ -333,6 +333,12 @@ p{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  opacity: 1;
+  transition: all var(--animation-duration) ease-out;
+}
+.mywork__projectimgs.anim-out{
+  opacity: 0;
+  transform: scale(0.9) translateY(40px);
 }
 .mywork__projectimgs a{
   width: 280px;
@@ -341,6 +347,10 @@ p{
   background-color: var(--color-light-white);
   position: relative;
   color: var(--color-white);
+
+}
+.mywork__projectimgs a.invisible{
+  display: none;
 }
 .mywork__projectimgs a:hover .imgs__description{
   transform: translateY(0px);
@@ -414,7 +424,7 @@ p{
   color: var(--color-dark-pink);
 }
 
-/* Contactx */
+/* Contact */
 
 #contact{
   background-color: var(--color-pink);
@@ -440,6 +450,25 @@ p{
   transition: all var(--animation-duration) ease-in;
 }
 
+/* arrow btn */
+
+.arrow--btn{
+  font-size: 60px;
+  color: var(--color-black);
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  opacity: 0;
+  pointer-events: none;
+  border: none;
+  transition: opacity var(--animation-duration) ease-in-out;
+}
+.arrow--btn.active{
+  opacity: 1;
+  pointer-events: all;
+  display: block;
+
+}
 /* For below 768px screen width */
 @media screen and (max-width:768px){
   .navbar__toggle-btn{
