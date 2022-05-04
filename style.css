@@ -141,7 +141,7 @@ p{
   color: var(--color-white);
   font-size: var(--font-medium);
   right: 32px;
-  top: 24px;
+  top: 28px;
   display: none;
 }
 
@@ -170,6 +170,9 @@ p{
     font-weight: var(--weight-semi-bold);
     padding: 8px 12px;
     
+}
+.contactme:hover{
+  background-color: var(--color-orange);
 }
 
 /* About */
@@ -303,6 +306,7 @@ p{
   border-radius: var(--size-border-radius);
   font-size: var(--font-regular);
   padding: 8px 48px;
+  position: relative;
 }
 .project__position button:hover, 
 .project__position button.active{
@@ -321,16 +325,16 @@ p{
   display: inline-block;
   line-height: 24px;
   margin-left: 5px;
-  position: relative;
+  position: absolute;
   top: -20px;
-  left: 4px;
+  right: 16px;
   opacity: 0;
   transition: all var(--animation-duration) ease;
 }
 .project__position button.active .position__count,
 .project__position button:hover .position__count{
   opacity: 1;
-  top: 0;
+  top: 7px;
 }
 .mywork__projectimgs {
   display: flex;
@@ -474,6 +478,22 @@ p{
 }
 /* For below 768px screen width */
 @media screen and (max-width:768px){
+  :root{
+    /* Font size */
+    --font-large : 30px;
+    --font-medium : 18px;
+    --font-regular : 16px;
+    --font-small : 14px;
+    --font-micro : 12px;
+
+  }
+  .section{
+    padding: 16px;
+    padding-top: 50px;
+  }
+  #navbar{
+    padding: 16px 16px;
+  }
   .navbar__toggle-btn{
     display: block;
   }
@@ -489,24 +509,56 @@ p{
     display: none;
     
   }
+  .headbox__myname{
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
   .headbox__content.active{
     display: flex;
   }
   .aboutmajor{
     flex-direction: column;
     align-items: center;
+    margin-top: 30px;
+    margin-bottom: 0px;
   }
   .position{
-    margin-bottom: 38px;
+    margin-bottom: 30px;
   }
   .skillset{
     flex-direction: column;
   }
+  .project__position button {
+    padding: 12px 0;
+    width: 50%;
+  }
+  .project__position button.active .position__count,
+.project__position button:hover .position__count{
+  right: 5px;
+  top: 8px;
+}
   .mywork__projectimgs a{
     flex-grow: 1;
   }
+  .colleague{
+    flex-direction: column;
+    align-items: center;
+  }
   .colleague img{
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
+  }
+  .colleague__txt{
+    order:1;
+  }
+  .colleague img:nth-child(odd),
+  .colleague img:nth-child(even){
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .arrow--btn{
+    right: 10px;
+    bottom: 10px;
+    font-size: 50px;
   }
 }
