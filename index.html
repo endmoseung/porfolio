@@ -1,287 +1,452 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gmon's portfolio</title>
-    <meta name="description" content="Portfolio for my great skills and knowledge">
-    <meta name="author" content="Gmon">
-    <link rel="icon" type="image/png" href="img/favicon.png">
-    <script src="https://kit.fontawesome.com/c60066da6e.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">  <!--font-family: 'OpenSans', sans-serif;-->
-    <link rel="stylesheet" href="style.css">
+    <meta
+      name="description"
+      content="Portfolio for my great skills and knowledge"
+    />
+    <meta name="author" content="Gmon" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/c60066da6e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--font-family: 'OpenSans', sans-serif;-->
+    <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- navbar -->
     <nav id="navbar">
-        <div class="headbox__myname">
-          <i class="fa-solid fa-star"></i>
-          <a href="">Seung Mo</a>
+      <div class="headbox__myname">
+        <i class="fa-solid fa-star"></i>
+        <a href="">Seung Mo</a>
+      </div>
+      <div class="headbox__content">
+        <div
+          id="home__button"
+          class="headbox__content--button active"
+          data-link="#home"
+        >
+          Home
         </div>
-        <div class="headbox__content">
-          <div id="home__button" class="headbox__content--button active" data-link="#home">Home</div>
-          <div id="about__button" class="headbox__content--button" data-link="#about">About</div>
-          <div id="skills__button" class="headbox__content--button" data-link="#skills">Skills</div>
-          <div id="mywork__button" class="headbox__content--button" data-link="#mywork">My Work</div>
-          <div id="testimonial__button" class="headbox__content--button" data-link="#testimonial">Testimonial</div>
-          <div id="contact__button" class="headbox__content--button" data-link="#contact">contact</div>
+        <div
+          id="about__button"
+          class="headbox__content--button"
+          data-link="#about"
+        >
+          About
         </div>
-        <button class="navbar__toggle-btn">
-            <i class="fa-solid fa-bars"></i>
-        </button>
+        <div
+          id="skills__button"
+          class="headbox__content--button"
+          data-link="#skills"
+        >
+          Skills
+        </div>
+        <div
+          id="mywork__button"
+          class="headbox__content--button"
+          data-link="#mywork"
+        >
+          My Work
+        </div>
+        <div
+          id="testimonial__button"
+          class="headbox__content--button"
+          data-link="#testimonial"
+        >
+          Testimonial
+        </div>
+        <div
+          id="contact__button"
+          class="headbox__content--button"
+          data-link="#contact"
+        >
+          contact
+        </div>
+      </div>
+      <button class="navbar__toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </nav>
     <!-- home -->
     <section id="home">
-        <div class="homemom">
-          <img class="home__img" src="img/0.jpeg" alt="Seungmo's profile photo">
-          <h1 class="sayhello__bigtxt">안녕하세요 <br> 저는 김승모입니다.</h1>
-          <h2 class="sayhello__smalltxt">주도적으로 공부하고 열정있게 일을하는 개발자입니다</h2>
-          <button class="contactme" data-link="#contact">CONTACT ME</button>
-        </div>
+      <div class="homemom">
+        <img class="home__img" src="img/0.jpeg" alt="Seungmo's profile photo" />
+        <h1 class="sayhello__bigtxt">
+          안녕하세요 <br />
+          같이걷는 개발자 김승모입니다.
+        </h1>
+        <h2 class="sayhello__smalltxt"></h2>
+        <button class="contactme" data-link="#contact">CONTACT ME</button>
+      </div>
     </section>
     <!-- about -->
     <section id="about" class="section section__container">
-        <h1 class="aboutme">About me</h1>
-        <p class="aboutmetxt">안녕하세요 저는 항상 능동적으로 살고 열정을 뺴면 시체인 개발자입니다. 공부하면서 몰랐던 내용이나 알려주고 싶은내용은 주로 티스토리 블로그를 이용해서 업로드 하고 있고, 흔히 하는 부트캠프나 국비지원보다는 독학을 택하면서 내가 만들어 보고 싶은앱, 주변친구들과 써보고 싶은앱들을 위주로 프로젝트를 많이 만들어 봤습니다.</p>
-        <div class="aboutmajor">
-            <div class="position">
-                <div class="position__pic"><i class="fa-brands fa-html5"></i></div>
-                <h2 class="position__title">Front-end</h2>
-                <p class="position__detail">HTML, CSS, Java Script, Typescript, React</p>
-            </div>
-            <div class="position">
-                <div class="position__pic"><i class="fa-solid fa-mobile"></i></div>
-                <h2 class="position__title">Mobile</h2>
-                <p class="position__detail">React, native, Cotlin, Android</p>
-            </div>
-            <div class="position">
-                <div class="position__pic"><i class="fa-solid fa-server"></i></div>
-                <h2 class="position__title">Back-end</h2>
-                <p class="position__detail">Java script, Nodejs, Java</p>
-            </div>
+      <h1 class="aboutme">About me</h1>
+      <p class="aboutmetxt">
+        안녕하세요. 개발자가 천직이라 느껴지는만큼 개발이 매력적으로 와닿고
+        그에따라 꾸준히 성장단계를 밟고 있습니다.<br />
+        부트캠프나 국비지원보다는 독학으로 내가 뭘 배워야할지, 뭐가 필요한지를
+        정리해서 프로젝트로 습득하고 훈련하며 블로그를 통해 습득한 경험이나
+        기술을 공유하고 있습니다.
+      </p>
+      <div class="aboutmajor">
+        <div class="position">
+          <div class="position__pic"><i class="fa-brands fa-html5"></i></div>
+          <h2 class="position__title">Skills</h2>
+          <p class="position__detail">
+            HTML, CSS, Javascript, TypeScript, React, Web APIs
+          </p>
         </div>
-        <div class="currentjobBox">
-            <div class="currentjob">
-                <div class="currentjob__logo"><img src="https://w.namu.la/s/622df622954731aaacffd20c6b86ce0d1a68003793744d8477b984a695a9daee4124b62a4bc01f0aacd5c387dfdfcf93dc7dab5c9da420d7a569310ba36439bbc5aeed37163b9b43a4088aaee73183ef" alt=""></div>
-                <div class="currentjobtxtbox">
-                    <p class="currentjob__txt">현재 OP.GG에서 프론트엔드 개발자로 일하고 있습니다.</p>
-                    <p class="currentjob__howlong">2022 May - Until now</p>
-                </div>
-            </div>
-            <div class="currentjob">
-                <div class="currentjob__logo"><img src="https://blog.kakaocdn.net/dn/bPWm4U/btqw8CtgkMu/pYxOoDLchCJHKrRkhElo7k/img.jpg" alt=""></div>
-                <div class="currentjobtxtbox">
-                    <p class="currentjob__txt">현재 KAKAO에서 프론트엔드 개발자로 일하고 있습니다.</p>
-                    <p class="currentjob__howlong">2022 May - Until now</p>
-                </div>
-            </div>
+        <div class="position">
+          <div class="position__pic"><i class="fa-solid fa-user"></i></div>
+          <h2 class="position__title">Collaboration</h2>
+          <p class="position__detail">Slack, Git, Figma</p>
         </div>
+        <div class="position">
+          <div class="position__pic"><i class="fa-solid fa-book"></i></div>
+          <h2 class="position__title">Recently Studying</h2>
+          <p class="position__detail">next-js, Recoil, RTK</p>
+        </div>
+      </div>
+      <!-- <div class="currentjobBox">
+        <div class="currentjob">
+          <div class="currentjob__logo">
+            <img
+              src="https://w.namu.la/s/622df622954731aaacffd20c6b86ce0d1a68003793744d8477b984a695a9daee4124b62a4bc01f0aacd5c387dfdfcf93dc7dab5c9da420d7a569310ba36439bbc5aeed37163b9b43a4088aaee73183ef"
+              alt=""
+            />
+          </div>
+          <div class="currentjobtxtbox">
+            <p class="currentjob__txt">
+              현재 OP.GG에서 프론트엔드 개발자로 일하고 있습니다.
+            </p>
+            <p class="currentjob__howlong">2022 May - Until now</p>
+          </div>
+        </div>
+        <div class="currentjob">
+          <div class="currentjob__logo">
+            <img
+              src="https://blog.kakaocdn.net/dn/bPWm4U/btqw8CtgkMu/pYxOoDLchCJHKrRkhElo7k/img.jpg"
+              alt=""
+            />
+          </div>
+          <div class="currentjobtxtbox">
+            <p class="currentjob__txt">
+              현재 KAKAO에서 프론트엔드 개발자로 일하고 있습니다.
+            </p>
+            <p class="currentjob__howlong">2022 May - Until now</p>
+          </div>
+        </div>
+      </div> -->
     </section>
     <!-- skills -->
     <section id="skills" class="section">
-        <div class="section__container">
-            <h1 class="skillstxt__title">Skills</h1>
+      <div class="section__container">
+        <h1 class="skillstxt__title">Skills</h1>
         <h2 class="skillstxt__smallTitle">Skills & Attributes</h2>
-        <p class="skillstxt__detail">꼼꼼하진 못해도 열정적이고 되새기는 습관이 있습니다. 평소 칠칠치 않은 성격이라 덤벙거릴때도 있으나 누구보다 저를 잘 알고있기 때문에 어떤일이든 자주 되새기는 습관이 있습니다. 협력능력, 사람과의 소통을 좋아합니다. 20살때부터 현재까지 알바를 꾸준히 하며 많은 직종에서 알바를 하고 사람들을 만나보면서 다양한 사람들과 어떻게 소통하면 좋을지, 어떤 방법이 좋은 일의 결과를 불러오는지 다양한 경험을 통해 습득했습니다.</p>
+        <p class="skillstxt__detail">
+          새로운 기술에 관심이 많고 나에게 맞는 기술이면 적용합니다. 유행은
+          따르되 맹신하지 않고 WHY?를 생각합니다.<br />개발자에게 코딩 스킬같은
+          HardSkill도 중요하지만 팀으로써 함께 하는 SoftSkill의 힘도 중요하다
+          생각해 열정적으로 그리고 능숙하게 소통합니다.
+        </p>
         <div class="skillset">
-            <div class="skillset__leftbox">
-                <h3 class="skillset__title">Skills</h3>
-                <div class="skillbox">
-                    <div class="skillbox__progress">
-                        <div class="progress__txt">
-                            <span>HTML</span>
-                            <span>99%</span>
-                        </div>
-                        <div class="progress__bar">
-                            <div class="bar__value" style="width: 99%;"></div>
-                        </div>
-                    </div>
+          <div class="skillset__leftbox">
+            <h3 class="skillset__title">Skills</h3>
+            <div class="skillbox">
+              <div class="skillbox__progress">
+                <div class="progress__txt">
+                  <span>HTML</span>
+                  <span>99%</span>
                 </div>
-                <div class="skillbox">
-                    <div class="skillbox__progress">
-                        <div class="progress__txt">
-                            <span>CSS</span>
-                            <span>92%</span>
-                        </div>
-                        <div class="progress__bar">
-                            <div class="bar__value" style="width: 92%;"></div>
-                        </div>
-                    </div>
+                <div class="progress__bar">
+                  <div class="bar__value" style="width: 99%"></div>
                 </div>
-                <div class="skillbox">
-                    <div class="skillbox__progress">
-                        <div class="progress__txt">
-                            <span>Java Script</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="progress__bar">
-                            <div class="bar__value" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skillbox">
-                    <div class="skillbox__progress">
-                        <div class="progress__txt">
-                            <span>Type Script</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="progress__bar">
-                            <div class="bar__value" style="width: 85%;"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skillbox">
-                    <div class="skillbox__progress">
-                        <div class="progress__txt">
-                            <span>REACT</span>
-                            <span>81%</span>
-                        </div>
-                        <div class="progress__bar">
-                            <div class="bar__value" style="width: 81%;"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skillbox">
-                    <div class="skillbox__progress">
-                        <div class="progress__txt">
-                            <span>node.js</span>
-                            <span>51%</span>
-                        </div>
-                        <div class="progress__bar">
-                            <div class="bar__value" style="width: 51%;"></div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-            <div class="skillset__rightbox">
-                <div class="tools">
-                    <h3 class="skillset__title">Tools</h3>
-                    <div class="tools__detail">
-                        <span>VisualStudio Code</span>
-                        <span>Atom</span>
-                        <span>Android development tool</span>
-                    </div>
+            <div class="skillbox">
+              <div class="skillbox__progress">
+                <div class="progress__txt">
+                  <span>CSS</span>
+                  <span>96%</span>
                 </div>
-                <div class=" etc">
-                    <h3 class="skillset__title">ETC</h3>
-                    <div class="etc__detail">
-                        <span>git</span>
-                        <span>math</span>
-                        <span>medical knowledge</span>
-                    </div>
+                <div class="progress__bar">
+                  <div class="bar__value" style="width: 96%"></div>
                 </div>
+              </div>
             </div>
+            <div class="skillbox">
+              <div class="skillbox__progress">
+                <div class="progress__txt">
+                  <span>Java Script</span>
+                  <span>92%</span>
+                </div>
+                <div class="progress__bar">
+                  <div class="bar__value" style="width: 92%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="skillbox">
+              <div class="skillbox__progress">
+                <div class="progress__txt">
+                  <span>REACT</span>
+                  <span>91%</span>
+                </div>
+                <div class="progress__bar">
+                  <div class="bar__value" style="width: 91%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="skillbox">
+              <div class="skillbox__progress">
+                <div class="progress__txt">
+                  <span>Type Script</span>
+                  <span>65%</span>
+                </div>
+                <div class="progress__bar">
+                  <div class="bar__value" style="width: 65%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="skillbox">
+              <div class="skillbox__progress">
+                <div class="progress__txt">
+                  <span>Redux</span>
+                  <span>62%</span>
+                </div>
+                <div class="progress__bar">
+                  <div class="bar__value" style="width: 62%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="skillbox">
+              <div class="skillbox__progress">
+                <div class="progress__txt">
+                  <span>next.js</span>
+                  <span>51%</span>
+                </div>
+                <div class="progress__bar">
+                  <div class="bar__value" style="width: 51%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skillset__rightbox">
+            <div class="tools">
+              <h3 class="skillset__title">Tools</h3>
+              <div class="tools__detail">
+                <span>Google Analytics</span>
+                <span>Github</span>
+                <span>Npm</span>
+              </div>
+            </div>
+            <div class="etc">
+              <h3 class="skillset__title">ETC</h3>
+              <div class="etc__detail">
+                <span>git</span>
+                <span>Styled-Component</span>
+                <span>Tailwind-Css</span>
+                <span>Context-API</span>
+              </div>
+            </div>
+          </div>
         </div>
-        </div>
+      </div>
     </section>
     <!-- mywork -->
     <section id="mywork" class="section">
-        <div class="section__container">
-            <h1 class="mywork__title">My work</h1>
-            <h3>projects</h3>
-            <div class="project__position">
-                <button data-filter="*" class="active">All<span class="position__count">8</span></button>
-                <button data-filter="frontend">Front-end<span class="position__count">4</span></button>
-                <button data-filter="mobile" >Mobile<span class="position__count">2</span></button>
-                <button data-filter="backend">Back-end<span class="position__count">2</span></button>
-            </div>
-            <div class="mywork__projectimgs">
-                <a href="https://www.naver.com" target="blank" class="imgs" data-type="frontend">
-                    <img src="img/project1.png" alt="">
-                    <div class="imgs__description">
-                        <h3>Youtube Site</h3>
-                        <span>Clone coding with HTML and CSS</span>
-                    </div>
-                </a >
-                <a href="https://www.naver.com" target="blank" class="imgs" data-type="frontend">
-                    <img src="img/project2.png" alt="">
-                    <div class="imgs__description">
-                        <h3>Youtube Site</h3>
-                        <span>Clone coding with HTML and CSS</span>
-                    </div>
-                </a >
-                <a href="https://www.naver.com" target="blank" class="imgs" data-type="frontend">
-                    <img src="img/project3.png" alt="">
-                    <div class="imgs__description">
-                        <h3>Youtube Site</h3>
-                        <span>Clone coding with HTML and CSS</span>
-                    </div>
-                </a >
-                <a href="https://www.naver.com" target="blank" class="imgs" data-type="frontend">
-                    <img src="img/project4.png" alt="">
-                    <div class="imgs__description">
-                        <h3>Youtube Site</h3>
-                        <span>Clone coding with HTML and CSS</span>
-                    </div>
-                </a >
-                <a href="https://www.naver.com" target="blank" class="imgs" data-type="mobile">
-                    <img src="img/project5.png" alt="">
-                    <div class="imgs__description">
-                        <h3>Youtube Site</h3>
-                        <span>Clone coding with HTML and CSS</span>
-                    </div>
-                </a >
-                <a href="https://www.naver.com" target="blank" class="imgs" data-type="mobile">
-                    <img src="img/project6.png" alt="">
-                    <div class="imgs__description">
-                        <h3>Youtube Site</h3>
-                        <span>Clone coding with HTML and CSS</span>
-                    </div>
-                </a >
-                <a href="https://www.naver.com" target="blank" class="imgs" data-type="backend">
-                    <img src="img/project7.png" alt="">
-                    <div class="imgs__description">
-                        <h3>Youtube Site</h3>
-                        <span>Clone coding with HTML and CSS</span>
-                    </div>
-                </a >
-                <a href="https://www.naver.com" target="blank" class="imgs" data-type="backend">
-                    <img src="img/project8.png" alt="">
-                    <div class="imgs__description">
-                        <h3>Youtube Site</h3>
-                        <span>Clone coding with HTML and CSS</span>
-                    </div>
-                </a >
-            </div>
+      <div class="section__container">
+        <h1 class="mywork__title">My work</h1>
+        <h3>projects</h3>
+        <div class="project__position">
+          <button data-filter="*" class="active">
+            All<span class="position__count">8</span>
+          </button>
+          <button data-filter="Personal">
+            Personal<span class="position__count">4</span>
+          </button>
+          <button data-filter="Team">
+            Team<span class="position__count">2</span>
+          </button>
+          <button data-filter="Assignment">
+            Assignment<span class="position__count">2</span>
+          </button>
         </div>
+        <div class="mywork__projectimgs">
+          <a
+            href="https://lolqbti.netlify.app/"
+            target="blank"
+            class="imgs"
+            data-type="Personal"
+          >
+            <img src="img/project1.png" alt="" />
+            <div class="imgs__description">
+              <h3>LOLQBTI</h3>
+              <span
+                >League Of Legend라는 게임속 상황을 통해 MBTI와 QUIZ를 풀고
+                공유가능한 서비스</span
+              >
+            </div>
+          </a>
+          <a
+            href="https://github.com/endmoseung/Redux_SparkPet"
+            target="blank"
+            class="imgs"
+            data-type="Personal"
+          >
+            <img src="img/project2.png" alt="" />
+            <div class="imgs__description">
+              <h3>커뮤니티 웹사이트</h3>
+              <span
+                >댓글 작성과 수정이 가능한 웹을 Redux로 상태관리한 개인
+                프로젝트</span
+              >
+            </div>
+          </a>
+          <a
+            href="https://findmonratgame.netlify.app/"
+            target="blank"
+            class="imgs"
+            data-type="Personal"
+          >
+            <img src="img/project3.png" alt="" />
+            <div class="imgs__description">
+              <h3>플래시 게임</h3>
+              <span>순수 자바스크립트로 구현한 괴물쥐를 잡는 플래시게임</span>
+            </div>
+          </a>
+          <a
+            href="https://moseungportfolio.netlify.app/"
+            target="blank"
+            class="imgs"
+            data-type="Personal"
+          >
+            <img src="img/project4.png" alt="" />
+            <div class="imgs__description">
+              <h3>포트폴리오</h3>
+              <span>순수 자바스크립트로 구현한 나만의 포트폴리오 웹사이트</span>
+            </div>
+          </a>
+          <a
+            href="https://naengpa.netlify.app/"
+            target="blank"
+            class="imgs"
+            data-type="Team"
+          >
+            <img src="img/project5.png" alt="" />
+            <div class="imgs__description">
+              <h3>냉장고 파먹기</h3>
+              <span
+                >냉장고내에 남은 재료들로 레시피를 추천받고, 레시피나 일상을
+                공유하는 커뮤니티가 있는 서비스</span
+              >
+            </div>
+          </a>
+          <a
+            href="https://vegopa-avdow676x-codadoc.vercel.app/"
+            target="blank"
+            class="imgs"
+            data-type="Team"
+          >
+            <img src="img/project6.png" alt="" />
+            <div class="imgs__description">
+              <h3>Vaegopa</h3>
+              <span
+                >음식을 추천받고, 본인 위치에서 가까운 음식점을 추천받는
+                서비스</span
+              >
+            </div>
+          </a>
+          <a
+            href="https://github.com/Pre-HotSix/pre-onboarding-assignment-week-5-1-team-6"
+            target="blank"
+            class="imgs"
+            data-type="Assignment"
+          >
+            <img src="img/project7.png" alt="" />
+            <div class="imgs__description">
+              <h3>프리온보딩 기업과제</h3>
+              <span> 상세내용을 보시려면 클릭해주세요 </span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/Pre-HotSix/pre-onboarding-assignment-week-4-1-team-6"
+            target="blank"
+            class="imgs"
+            data-type="Assignment"
+          >
+            <img src="img/project8.png" alt="" />
+            <div class="imgs__description">
+              <h3>프리온보딩 기업 과제</h3>
+              <span>상세내용을 보시려면 클릭해주세요</span>
+            </div>
+          </a>
+        </div>
+      </div>
     </section>
     <!-- testimonial -->
     <section id="testimonial" class="section">
-        <div class="section__container">
-            <h1 class="bigtitle">Testimonials</h1>
-            <h3 class="smalltitle">See what they say about me</h3>
-            <div class="colleaguebox">
-                <div class="colleague">
-                    <img src="img/face.jpeg" alt="">
-                    <div class="colleague__txt">
-                        <p class="txt__colleaugesays">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quod enim qui libero nemo hic, omnis vitae nulla a aliquid consectetur modi fuga deserunt itaque aliquam delectus ipsa dolor adipisci.</p>
-                        <p class="txt__whois"><a target="blank" href="https://www.kakaocorp.com/page/">Gmon</a> / Kakao</p>
-                    </div>
-                </div>
-                <div class="colleague">
-                    <div class="colleague__txt">
-                        <p class="txt__colleaugesays">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quod enim qui libero nemo hic, omnis vitae nulla a aliquid consectetur modi fuga deserunt itaque aliquam delectus ipsa dolor adipisci.</p>
-                        <p class="txt__whois"><a target="blank" href="https://www.op.gg/">Gmon</a> / OP.gg</p>
-                    </div>
-                    <img src="img/face.jpeg" alt="">
-                </div>
+      <div class="section__container">
+        <h1 class="bigtitle">Testimonials</h1>
+        <h3 class="smalltitle">See what they say about me</h3>
+        <div class="colleaguebox">
+          <div class="colleague">
+            <img src="img/face.jpeg" alt="" />
+            <div class="colleague__txt">
+              <p class="txt__colleaugesays">
+                정말 열정적인 팀장으로써 참여해주셔서 존경스러웠어요. 현직에서
+                좋은 모습으로 만났으면 좋겠습니다.
+              </p>
+              <p class="txt__whois">
+                <a target="blank" href="">Wooyoung(FE)</a>
+                / Wanted PreOnboarding
+              </p>
             </div>
+          </div>
+          <div class="colleague">
+            <div class="colleague__txt">
+              <p class="txt__colleaugesays">
+                개발에 대해선 잘 몰랐는데 모승은 개발과 디자인을 연관지어서
+                설명해주셔서 이해가 잘 됐어요! 디자인에서 적극적으로 질문하고
+                반영하시는게 인상적이었습니다 :)
+              </p>
+              <p class="txt__whois">
+                <a target="blank" href="">Wendy(Designer)</a> / 냉장고 파먹기
+              </p>
+            </div>
+            <img src="img/face.jpeg" alt="" />
+          </div>
         </div>
+      </div>
     </section>
     <!-- contact -->
     <section id="contact" class="section">
-        <h1 class="contact__talk">Let's talk</h1>
-        <h2 class="contact__email">tmdah900@naver.com</h2>
-        <div class="contact__link">
-            <a target="blank" href="https://frontend-jin.tistory.com/"><i class="fa-solid fa-b"></i></a>
-            <a target="blank"  href="https://github.com/endmoseung"><i class="fa-brands fa-github"></i></a>
-        </div>
-        <p class="contact__right">2022 김승모 - All rights reserved</p>
+      <h1 class="contact__talk">Let's walk</h1>
+      <h2 class="contact__email">tmdah900@naver.com</h2>
+      <h2 class="contact__email">010-3728-5932</h2>
+      <div class="contact__link">
+        <a target="blank" href="https://velog.io/@endmoseung"
+          ><i class="fa-solid fa-b"></i
+        ></a>
+        <a target="blank" href="https://github.com/endmoseung"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
+      <p class="contact__right">2022 Moseung - All rights reserved</p>
     </section>
     <button class="arrow--btn"><i class="fa-solid fa-circle-up"></i></button>
-</body>
+  </body>
 </html>
