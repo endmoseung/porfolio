@@ -1,4 +1,4 @@
-# 🎉 원티드 프리온보딩 프론트엔드 코스 3차 과제
+# 🎉 포트폴리오
 <br/>
 
 ## 프로젝트 소개
@@ -12,23 +12,6 @@ https://moseungportfolio.netlify.app/
 
 <br/>
 
-
-
-## 실행 방법
-
-레포지토리를 `clone` 합니다
-```markdown
-$ git clone https://github.com/Pre-HotSix/wanted-pre-onboarding-imlab.git
-```
-dependencies를 설치합니다
-```markdown
-$ npm install
-```
-프로젝트를 실행합니다
-```markdown
-$ npm start
-```
-<br/>
 
 ## 폴더 구조
 
